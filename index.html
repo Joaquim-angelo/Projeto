@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>IA Reconhece Números</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site com Teachable Machine</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>IA que reconhece números</h1>
-  <button type="button" onclick="init()">Iniciar</button>
-  <div><video id="webcam" autoplay playsinline width="224" height="224"></video></div>
-  <div id="resultado"></div>
+  <h1>Detector com Teachable Machine</h1>
+  <video id="webcam" autoplay playsinline></video>
+  <p id="label">Aguardando...</p>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
