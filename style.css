@@ -1,17 +1,20 @@
 body {
-  text-align: center;
   font-family: Arial, sans-serif;
-  margin-top: 50px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+#interface {
+  margin-top: 20px;
 }
 
 video {
-  width: 300px;
   border: 2px solid #333;
   border-radius: 10px;
 }
 
-#label {
-  font-size: 24px;
-  margin-top: 20px;
-  color: #2a9d8f;
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
 }

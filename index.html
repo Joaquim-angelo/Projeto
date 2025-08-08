@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Site com Teachable Machine</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Teachable Machine - Exemplo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Detector com Teachable Machine</h1>
-  <video id="webcam" autoplay playsinline></video>
-  <p id="label">Aguardando...</p>
+  <h1>Classificador com Teachable Machine</h1>
+  <div id="interface">
+    <video id="webcam" autoplay playsinline width="224" height="224"></video>
+    <button onclick="init()">Iniciar</button>
+    <div id="result">Resultado: aguardando...</div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
   <script src="script.js"></script>
 </body>
